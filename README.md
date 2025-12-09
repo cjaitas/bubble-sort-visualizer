@@ -1,7 +1,10 @@
 # Bubble Sort Visualizer 
 ## Demo video/gif/screenshot of test 
-## Problem Breakdown & Computational Thinking (You can add a flowchart and write the 
-four pillars of computational thinking  briefly in bullets) 
+## Problem Breakdown & Computational Thinking
+I chose bubble sort as it is a simple, easy to understand sorting algorithm that uses many steps to complete the list. Its repetetive comparisons and swaps make it easy to visualize through animated bars. 
+
+Decomposition:
+
 ## Steps to Run:
 1. Enter list of numbers separated with commas
 2. Click the 'Start Sorting' button to start sorting the list
