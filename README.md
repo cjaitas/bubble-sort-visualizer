@@ -4,6 +4,7 @@
 I chose bubble sort as it is a simple, easy to understand sorting algorithm that uses many steps to complete the list. Its repetetive comparisons and swaps make it easy to visualize through animated bars. 
 
 Decomposition:
+
 Bubble sort can be broken down into smaller steps
 1. Start at the first index of the list
 2. Compare current value with the next value
@@ -12,13 +13,17 @@ Bubble sort can be broken down into smaller steps
 5. After each full pass the largest value should be at the end of the list
 6. Continue untill sorted
 
+
 Pattern Recognition:
+
 Bubble sort repeatedly follows a pattern
 - Compare adjacent values
 - Swap when out of order
 - Reduce the unsorted range after each pass
 
+
 Abstraction:
+
 The details I choose to show the user include:
 - The current list state in text
 - A description of each step in text. Ex. "Swapping 7 and 6"
@@ -27,13 +32,17 @@ The details I choose not to show the user include:
 - Internal loop counters
 - Temporary variables used during swaps
 
+
 Algorithm Design:
+
 Input 
 - User inputs a comma separated string of integers. Ex. 4,1,3,2
+
 Processing
 - Convert the string to a list
 - Run the bubble sort algorithm
 - Build bar chart for comparisons and swaps
+
 Output
 - A description of each step in text.
 - The current list state
