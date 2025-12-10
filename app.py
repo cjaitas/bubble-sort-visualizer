@@ -47,6 +47,7 @@ def create_bar_html(values, highlight_indices=None, swap=False):
     </div>
     """
 
+
 # Bubble Sort Algorithm — generates a list of visual steps
 def bubble_sort_visual(arr):
     """
@@ -60,6 +61,20 @@ def bubble_sort_visual(arr):
     arr = arr.copy()    # Work on a copy so original input isn't modified
     n = len(arr)
 
+    # If no elements, return empty steps
+    if n == 0:
+        return steps
+
+    # If only one element, record a simple "no sorting needed" step
+    if n == 1:
+        steps.append({
+            "action": "No sorting needed (only one number).",
+            "list": arr.copy(),
+            "html": create_bar_html(arr.copy())
+        })
+        return steps
+
+    # Normal bubble sort loop
     for i in range(n):
         # Inner loop compares adjacent values
         for j in range(0, n - i - 1):
@@ -84,12 +99,14 @@ def bubble_sort_visual(arr):
 
     return steps
 
+
 # First Step Handler — runs bubble sort + returns step 1
 def start_sort(input_list):
     """
     Converts the user's input string into a list, starts bubble sort,
     and sends back the first recorded step.
     """
+
     try:
         # Convert string to list "5, 3, 1" → [5, 3, 1]
         arr = [int(x.strip()) for x in input_list.split(",") if x.strip() != ""]
@@ -97,8 +114,16 @@ def start_sort(input_list):
         # Return error state if conversion fails
         return "Error: Invalid input", "", "<div></div>", [], 0
 
+    # If no valid numbers were entered, return a friendly message
+    if len(arr) == 0:
+        return "No numbers entered.", "", "<div></div>", [], 0
+
     # Generate all steps of bubble sort
     steps = bubble_sort_visual(arr)
+
+    # Safety: if steps is empty (should not happen), return neutral output
+    if len(steps) == 0:
+        return "No steps to show.", arr, create_bar_html(arr), [], 0
 
     # Get the first step
     first = steps[0]
@@ -113,11 +138,16 @@ def start_sort(input_list):
     return text, first["list"], first["html"], steps, 1
 
 
-# Next Step Handler — Move forward one step at a time when the user clicks "Next Step".
+# Next Step Handler — Move forward one step at a time
 def next_step(steps, index):
     """
     Loads the next recorded step from the bubble sort.
     """
+
+    # If no steps exist at all
+    if not steps:
+        return "No steps to display.", [], "<div></div>", 0
+
     # If we've reached the end of all steps:
     if index >= len(steps):
         return "Sorting complete!", steps[-1]["list"], steps[-1]["html"], index
