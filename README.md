@@ -4,6 +4,7 @@ Test cases included
 - Empty string
 - Single number
 - Sorted list
+- Duplicate numbers
 - Backwards sorted list
 - Negative numbers
 - Invalid elements (word)
