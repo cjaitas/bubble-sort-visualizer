@@ -13,7 +13,31 @@ Bubble sort can be broken down into smaller steps
 6. Continue untill sorted
 
 Pattern Recognition:
+Bubble sort repeatedly follows a pattern
+- Compare adjacent values
+- Swap when out of order
+- Reduce the unsorted range after each pass
 
+Abstraction:
+The details I choose to show the user include:
+- The current list state in text
+- A description of each step in text. Ex. "Swapping 7 and 6"
+- A bar chart demonstrating swaps that change colour according to comparing and swapping
+The details I choose not to show the user include:
+- Internal loop counters
+- Temporary variables used during swaps
+
+Algorithm Design:
+Input 
+- User inputs a comma separated string of integers. Ex. 4,1,3,2
+Processing
+- Convert the string to a list
+- Run the bubble sort algorithm
+- Build bar chart for comparisons and swaps
+Output
+- A description of each step in text.
+- The current list state
+- A bar chart demonstrating swaps that change colour according to comparing and swapping
 
 ## Steps to Run:
 1. Enter list of numbers separated with commas
