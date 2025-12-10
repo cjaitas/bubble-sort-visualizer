@@ -1,5 +1,14 @@
 # Bubble Sort Visualizer 
 ## Demo video has been submitted via OnQ as Github wont allow large enough files to be uploaded
+Test cases included
+- Empty string
+- Single number
+- Sorted list
+- Backwards sorted list
+- Negative numbers
+- Invalid elements (word)
+
+
 ## Problem Breakdown & Computational Thinking
 I chose bubble sort as it is a simple, easy to understand sorting algorithm that uses many steps to complete the list. Its repetetive comparisons and swaps make it easy to visualize through animated bars. 
 
@@ -55,4 +64,4 @@ Flow chart is in the screenshots folder and has been submitted via OnQ as GitHub
 2. Click the 'Start Sorting' button to start sorting the list
 3. Click the 'Next Step' button to view the sorting process step by step
 ## Hugging Face Link: https://huggingface.co/spaces/cjaitas/Bubble-Sort-Visualizer
-## Christian Aitas. AI Disclaimer: I used ChatGPT-5 in order to get help for the GUI aspects of the assignment as I was unfamilliar with Hugging Face.  
+## Christian Aitas. AI Disclaimer: I used ChatGPT-5 in order to get help for the GUI aspects of the assignment as I was unfamilliar with Hugging Face and HTML. It allowed me to integrate the bubble sort with the GUI to the best of my abilities.  
