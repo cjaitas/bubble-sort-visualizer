@@ -48,6 +48,8 @@ Output
 - The current list state
 - A bar chart demonstrating swaps that change colour according to comparing and swapping
 
+Flow chart is in the screenshots folder
+
 ## Steps to Run:
 1. Enter list of numbers separated with commas
 2. Click the 'Start Sorting' button to start sorting the list
