@@ -1,5 +1,5 @@
 # Bubble Sort Visualizer 
-## Demo video and flowchart in screenshots folder
+## Demo video has been submitted via OnQ as Github wont allow large enough files to be uploaded
 ## Problem Breakdown & Computational Thinking
 I chose bubble sort as it is a simple, easy to understand sorting algorithm that uses many steps to complete the list. Its repetetive comparisons and swaps make it easy to visualize through animated bars. 
 
@@ -48,7 +48,7 @@ Output
 - The current list state
 - A bar chart demonstrating swaps that change colour according to comparing and swapping
 
-Flow chart is in the screenshots folder
+Flow chart is in the screenshots folder and has been submitted via OnQ as GitHub can't show my photos
 
 ## Steps to Run:
 1. Enter list of numbers separated with commas
